@@ -1,0 +1,2 @@
+include ':provider'
+rootProject.name = "provider"

@@ -1,0 +1,26 @@
+[
+    {
+        "uid":1828,
+        "name":"KOF XIII",
+        "charIds":[1783,1784,1785,1786,1787,1788,1789,1790,1791,1792,1793,1794,1795,1796,1797,1798,1799,1800,1801,1802,1803,1804,1805,1806,1807,1808,1809,1810,1811,1812,1813,1814,1815,1816,1817,1818],
+        "iconUrl":"https://img.fae.ro/41a199.png"
+    },
+    {
+        "uid":1829,
+        "name":"Tekken 7",
+        "charIds":[12,9,7],
+        "iconUrl":"https://img.fae.ro/a9222a.png"
+    },
+    {
+        "uid":1830,
+        "name":"KOF XIV",
+        "charIds":[10],
+        "iconUrl":"https://img.fae.ro/81f2b6.png"
+    },
+    {
+        "uid":1831,
+        "name":"KOF XV",
+        "charIds":[34,35,36],
+        "iconUrl":"https://img.fae.ro/762785.png"
+    }
+]

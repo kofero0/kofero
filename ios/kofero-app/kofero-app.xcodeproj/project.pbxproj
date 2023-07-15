@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B24164627EBAC7E00074B85 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B24164527EBAC7E00074B85 /* Extension.swift */; };
+		4B24164827EBC38000074B85 /* HomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B24164727EBC38000074B85 /* HomeViewBuilder.swift */; };
+		4B24164A27ECF16000074B85 /* GameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B24164927ECF16000074B85 /* GameRouter.swift */; };
+		4B24164C27ECFF2100074B85 /* GameViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B24164B27ECFF2100074B85 /* GameViewBuilder.swift */; };
+		4B3BF5E227E905AF0010251F /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3BF5E127E905AF0010251F /* HomeRouter.swift */; };
+		4B43D88829D0DB7C0064507C /* provider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B43D88729D0DB7C0064507C /* provider.framework */; };
+		4B43D88929D0DB7C0064507C /* provider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B43D88729D0DB7C0064507C /* provider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B78BFCE25FC51620015BFD7 /* MoveComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78BFCD25FC51620015BFD7 /* MoveComponent.swift */; };
+		4B78BFD025FC57FA0015BFD7 /* MoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78BFCF25FC57FA0015BFD7 /* MoveView.swift */; };
+		4B8A0C40261BD1CE007006D6 /* game.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8A0C3F261BD1CE007006D6 /* game.json */; };
+		4B8A0C4A261F9C6E007006D6 /* char.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8A0C49261F9C6E007006D6 /* char.json */; };
+		4B8A0C4C261F9C90007006D6 /* move.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8A0C4B261F9C90007006D6 /* move.json */; };
+		4B91FB76262E077400A4A56A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91FB75262E077400A4A56A /* Model.swift */; };
+		4B9A9FE6265192D000F4E103 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A9FE5265192D000F4E103 /* AdViewController.swift */; };
+		4B9AC1A2263B6C2A00CEA6D9 /* GameItemGridContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9AC1A1263B6C2A00CEA6D9 /* GameItemGridContentConfiguration.swift */; };
+		4B9AC1A4263B6C6600CEA6D9 /* GameItemGridContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9AC1A3263B6C6600CEA6D9 /* GameItemGridContentView.swift */; };
+		4B9F8E8825F320AF007F330C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F8E8725F320AF007F330C /* AppDelegate.swift */; };
+		4B9F8E8A25F320AF007F330C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F8E8925F320AF007F330C /* SceneDelegate.swift */; };
+		4B9F8E8C25F320AF007F330C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F8E8B25F320AF007F330C /* RootView.swift */; };
+		4B9F8E9125F320B0007F330C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9F8E9025F320B0007F330C /* Assets.xcassets */; };
+		4B9F8EAE25F32230007F330C /* presenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9F8EAB25F32226007F330C /* presenter.framework */; };
+		4B9F8EAF25F32230007F330C /* presenter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9F8EAB25F32226007F330C /* presenter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B9F8EBA25F93D98007F330C /* RootComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F8EB925F93D98007F330C /* RootComponent.swift */; };
+		4B9F8EBC25F94681007F330C /* HomeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F8EBB25F94681007F330C /* HomeComponent.swift */; };
+		4B9F8EBF25F94B12007F330C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F8EBE25F94B12007F330C /* HomeView.swift */; };
+		4B9F8EC125F94E0D007F330C /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F8EC025F94E0D007F330C /* GameView.swift */; };
+		4B9F8EC325F94F14007F330C /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F8EC225F94F14007F330C /* GameComponent.swift */; };
+		4B9F8ECF25FA886D007F330C /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F8ECE25FA886D007F330C /* NeedleGenerated.swift */; };
+		4B9F8ED125FA9382007F330C /* CharacterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F8ED025FA9382007F330C /* CharacterComponent.swift */; };
+		4B9F8ED325FA94B7007F330C /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F8ED225FA94B7007F330C /* CharacterView.swift */; };
+		4BCE3DBC263A0C7700901CB5 /* GameViewItemGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE3DBB263A0C7700901CB5 /* GameViewItemGridCell.swift */; };
+		4BE8A2482638AA7D00FA5BD7 /* HomeItemGridContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8A2472638AA7D00FA5BD7 /* HomeItemGridContentConfiguration.swift */; };
+		4BE8A24A2638B9EA00FA5BD7 /* HomeItemGridContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8A2492638B9EA00FA5BD7 /* HomeItemGridContentView.swift */; };
+		4BE8A24C2638BE6F00FA5BD7 /* HomeViewItemGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8A24B2638BE6F00FA5BD7 /* HomeViewItemGridCell.swift */; };
+		4BEA2687263906B1003739CB /* GridCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA2686263906B1003739CB /* GridCollectionViewLayout.swift */; };
+		D06A06C2CA39595AF12EEF17 /* Pods_debug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806D39EE010B3DE24F5FDB48 /* Pods_debug.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B9F8EB025F32230007F330C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4B9F8EAF25F32230007F330C /* presenter.framework in Embed Frameworks */,
+				4B43D88929D0DB7C0064507C /* provider.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4A64C7E112502570E196524F /* Pods-kofero-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kofero-app.release.xcconfig"; path = "Target Support Files/Pods-kofero-app/Pods-kofero-app.release.xcconfig"; sourceTree = "<group>"; };
+		4B24164527EBAC7E00074B85 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4B24164727EBC38000074B85 /* HomeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBuilder.swift; sourceTree = "<group>"; };
+		4B24164927ECF16000074B85 /* GameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRouter.swift; sourceTree = "<group>"; };
+		4B24164B27ECFF2100074B85 /* GameViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewBuilder.swift; sourceTree = "<group>"; };
+		4B3BF5E127E905AF0010251F /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		4B43D88729D0DB7C0064507C /* provider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = provider.framework; sourceTree = "<group>"; };
+		4B78BFCD25FC51620015BFD7 /* MoveComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveComponent.swift; sourceTree = "<group>"; };
+		4B78BFCF25FC57FA0015BFD7 /* MoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveView.swift; sourceTree = "<group>"; };
+		4B8A0C3F261BD1CE007006D6 /* game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = game.json; sourceTree = "<group>"; };
+		4B8A0C49261F9C6E007006D6 /* char.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = char.json; sourceTree = "<group>"; };
+		4B8A0C4B261F9C90007006D6 /* move.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = move.json; sourceTree = "<group>"; };
+		4B91FB75262E077400A4A56A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4B9A9FE5265192D000F4E103 /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		4B9AC1A1263B6C2A00CEA6D9 /* GameItemGridContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemGridContentConfiguration.swift; sourceTree = "<group>"; };
+		4B9AC1A3263B6C6600CEA6D9 /* GameItemGridContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemGridContentView.swift; sourceTree = "<group>"; };
+		4B9F8E8425F320AF007F330C /* debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9F8E8725F320AF007F330C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B9F8E8925F320AF007F330C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4B9F8E8B25F320AF007F330C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		4B9F8E9025F320B0007F330C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B9F8E9525F320B0007F330C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B9F8EAB25F32226007F330C /* presenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = presenter.framework; sourceTree = "<group>"; };
+		4B9F8EB925F93D98007F330C /* RootComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootComponent.swift; sourceTree = "<group>"; };
+		4B9F8EBB25F94681007F330C /* HomeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeComponent.swift; sourceTree = "<group>"; };
+		4B9F8EBE25F94B12007F330C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4B9F8EC025F94E0D007F330C /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		4B9F8EC225F94F14007F330C /* GameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameComponent.swift; sourceTree = "<group>"; };
+		4B9F8ECE25FA886D007F330C /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NeedleGenerated.swift; path = "kofero-app/NeedleGenerated.swift"; sourceTree = SOURCE_ROOT; };
+		4B9F8ED025FA9382007F330C /* CharacterComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterComponent.swift; sourceTree = "<group>"; };
+		4B9F8ED225FA94B7007F330C /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		4BCE3DBB263A0C7700901CB5 /* GameViewItemGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewItemGridCell.swift; sourceTree = "<group>"; };
+		4BE8A2472638AA7D00FA5BD7 /* HomeItemGridContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemGridContentConfiguration.swift; sourceTree = "<group>"; };
+		4BE8A2492638B9EA00FA5BD7 /* HomeItemGridContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemGridContentView.swift; sourceTree = "<group>"; };
+		4BE8A24B2638BE6F00FA5BD7 /* HomeViewItemGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewItemGridCell.swift; sourceTree = "<group>"; };
+		4BEA2686263906B1003739CB /* GridCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewLayout.swift; sourceTree = "<group>"; };
+		5A56B3AF84475A454F4738CD /* Pods-debug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debug.debug.xcconfig"; path = "Target Support Files/Pods-debug/Pods-debug.debug.xcconfig"; sourceTree = "<group>"; };
+		806D39EE010B3DE24F5FDB48 /* Pods_debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F99065036717D68CDB7398D /* Pods-debug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debug.release.xcconfig"; path = "Target Support Files/Pods-debug/Pods-debug.release.xcconfig"; sourceTree = "<group>"; };
+		EDFAB6D4816CBCBB3B3A9AE1 /* Pods-kofero-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kofero-app.debug.xcconfig"; path = "Target Support Files/Pods-kofero-app/Pods-kofero-app.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B9F8E8125F320AF007F330C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9F8EAE25F32230007F330C /* presenter.framework in Frameworks */,
+				4B43D88829D0DB7C0064507C /* provider.framework in Frameworks */,
+				D06A06C2CA39595AF12EEF17 /* Pods_debug.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B8A0C4D261F9C98007006D6 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				4B8A0C3F261BD1CE007006D6 /* game.json */,
+				4B8A0C49261F9C6E007006D6 /* char.json */,
+				4B8A0C4B261F9C90007006D6 /* move.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		4B91FB7B262E0A8100A4A56A /* home */ = {
+			isa = PBXGroup;
+			children = (
+				4B9F8EBE25F94B12007F330C /* HomeView.swift */,
+				4BE8A2472638AA7D00FA5BD7 /* HomeItemGridContentConfiguration.swift */,
+				4BE8A2492638B9EA00FA5BD7 /* HomeItemGridContentView.swift */,
+				4BE8A24B2638BE6F00FA5BD7 /* HomeViewItemGridCell.swift */,
+				4B3BF5E127E905AF0010251F /* HomeRouter.swift */,
+				4B24164727EBC38000074B85 /* HomeViewBuilder.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		4B9AC1A5263B6D7D00CEA6D9 /* character */ = {
+			isa = PBXGroup;
+			children = (
+				4B9F8ED225FA94B7007F330C /* CharacterView.swift */,
+			);
+			path = character;
+			sourceTree = "<group>";
+		};
+		4B9F8E7B25F320AF007F330C = {
+			isa = PBXGroup;
+			children = (
+				4B9F8E8625F320AF007F330C /* kofero-app */,
+				4B9F8E8525F320AF007F330C /* Products */,
+				6C5B581B8005232FF80DBB35 /* Pods */,
+				DA091392ACE0784BBB543FDC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4B9F8E8525F320AF007F330C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B9F8E8425F320AF007F330C /* debug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B9F8E8625F320AF007F330C /* kofero-app */ = {
+			isa = PBXGroup;
+			children = (
+				4B8A0C4D261F9C98007006D6 /* json */,
+				4B9F8EB825F92F92007F330C /* di */,
+				4B9F8EBD25F94979007F330C /* view */,
+				4B9F8E8725F320AF007F330C /* AppDelegate.swift */,
+				4B9F8E8925F320AF007F330C /* SceneDelegate.swift */,
+				4B9F8E9025F320B0007F330C /* Assets.xcassets */,
+				4B9F8E9525F320B0007F330C /* Info.plist */,
+				4B24164527EBAC7E00074B85 /* Extension.swift */,
+			);
+			path = "kofero-app";
+			sourceTree = "<group>";
+		};
+		4B9F8EB825F92F92007F330C /* di */ = {
+			isa = PBXGroup;
+			children = (
+				4B9F8ECE25FA886D007F330C /* NeedleGenerated.swift */,
+				4B9F8EB925F93D98007F330C /* RootComponent.swift */,
+				4B9F8EBB25F94681007F330C /* HomeComponent.swift */,
+				4B9F8EC225F94F14007F330C /* GameComponent.swift */,
+				4B9F8ED025FA9382007F330C /* CharacterComponent.swift */,
+				4B78BFCD25FC51620015BFD7 /* MoveComponent.swift */,
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
+		4B9F8EBD25F94979007F330C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4B91FB7B262E0A8100A4A56A /* home */,
+				4BCE3DBA263A0BC100901CB5 /* game */,
+				4B9AC1A5263B6D7D00CEA6D9 /* character */,
+				4BB5B95C2647B4B30056D973 /* move */,
+				4B91FB75262E077400A4A56A /* Model.swift */,
+				4BEA2686263906B1003739CB /* GridCollectionViewLayout.swift */,
+				4B9F8E8B25F320AF007F330C /* RootView.swift */,
+				4B9A9FE5265192D000F4E103 /* AdViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4BB5B95C2647B4B30056D973 /* move */ = {
+			isa = PBXGroup;
+			children = (
+				4B78BFCF25FC57FA0015BFD7 /* MoveView.swift */,
+			);
+			path = move;
+			sourceTree = "<group>";
+		};
+		4BCE3DBA263A0BC100901CB5 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				4B9F8EC025F94E0D007F330C /* GameView.swift */,
+				4BCE3DBB263A0C7700901CB5 /* GameViewItemGridCell.swift */,
+				4B9AC1A1263B6C2A00CEA6D9 /* GameItemGridContentConfiguration.swift */,
+				4B9AC1A3263B6C6600CEA6D9 /* GameItemGridContentView.swift */,
+				4B24164927ECF16000074B85 /* GameRouter.swift */,
+				4B24164B27ECFF2100074B85 /* GameViewBuilder.swift */,
+			);
+			path = game;
+			sourceTree = "<group>";
+		};
+		6C5B581B8005232FF80DBB35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDFAB6D4816CBCBB3B3A9AE1 /* Pods-kofero-app.debug.xcconfig */,
+				4A64C7E112502570E196524F /* Pods-kofero-app.release.xcconfig */,
+				5A56B3AF84475A454F4738CD /* Pods-debug.debug.xcconfig */,
+				8F99065036717D68CDB7398D /* Pods-debug.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA091392ACE0784BBB543FDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B43D88729D0DB7C0064507C /* provider.framework */,
+				4B9F8EAB25F32226007F330C /* presenter.framework */,
+				806D39EE010B3DE24F5FDB48 /* Pods_debug.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B9F8E8325F320AF007F330C /* debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B9F8E9825F320B0007F330C /* Build configuration list for PBXNativeTarget "debug" */;
+			buildPhases = (
+				E87B36E870CA7D62BA524359 /* [CP] Check Pods Manifest.lock */,
+				4B9F8EB525F323CB007F330C /* needle codegen */,
+				4B9F8E8025F320AF007F330C /* Sources */,
+				4B9F8E8125F320AF007F330C /* Frameworks */,
+				4B9F8E8225F320AF007F330C /* Resources */,
+				93B441D35A0C1A826474D325 /* [CP] Embed Pods Frameworks */,
+				4B9F8EB025F32230007F330C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = debug;
+			productName = "kofero-app";
+			productReference = 4B9F8E8425F320AF007F330C /* debug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B9F8E7C25F320AF007F330C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4B9F8E8325F320AF007F330C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 4B9F8E7F25F320AF007F330C /* Build configuration list for PBXProject "kofero-app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B9F8E7B25F320AF007F330C;
+			productRefGroup = 4B9F8E8525F320AF007F330C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B9F8E8325F320AF007F330C /* debug */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B9F8E8225F320AF007F330C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9F8E9125F320B0007F330C /* Assets.xcassets in Resources */,
+				4B8A0C4C261F9C90007006D6 /* move.json in Resources */,
+				4B8A0C40261BD1CE007006D6 /* game.json in Resources */,
+				4B8A0C4A261F9C6E007006D6 /* char.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B9F8EB525F323CB007F330C /* needle codegen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "needle codegen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export SOURCEKIT_LOGGING=0 && needle generate kofero-app/NeedleGenerated.swift kofero-app/\n";
+		};
+		93B441D35A0C1A826474D325 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-debug/Pods-debug-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-debug/Pods-debug-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-debug/Pods-debug-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E87B36E870CA7D62BA524359 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-debug-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B9F8E8025F320AF007F330C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9F8EBF25F94B12007F330C /* HomeView.swift in Sources */,
+				4BCE3DBC263A0C7700901CB5 /* GameViewItemGridCell.swift in Sources */,
+				4B24164827EBC38000074B85 /* HomeViewBuilder.swift in Sources */,
+				4BE8A2482638AA7D00FA5BD7 /* HomeItemGridContentConfiguration.swift in Sources */,
+				4BEA2687263906B1003739CB /* GridCollectionViewLayout.swift in Sources */,
+				4BE8A24A2638B9EA00FA5BD7 /* HomeItemGridContentView.swift in Sources */,
+				4B9F8E8C25F320AF007F330C /* RootView.swift in Sources */,
+				4B9AC1A4263B6C6600CEA6D9 /* GameItemGridContentView.swift in Sources */,
+				4B9F8E8825F320AF007F330C /* AppDelegate.swift in Sources */,
+				4B9AC1A2263B6C2A00CEA6D9 /* GameItemGridContentConfiguration.swift in Sources */,
+				4B9A9FE6265192D000F4E103 /* AdViewController.swift in Sources */,
+				4B9F8EBA25F93D98007F330C /* RootComponent.swift in Sources */,
+				4B91FB76262E077400A4A56A /* Model.swift in Sources */,
+				4B9F8ED325FA94B7007F330C /* CharacterView.swift in Sources */,
+				4B9F8EBC25F94681007F330C /* HomeComponent.swift in Sources */,
+				4B9F8ECF25FA886D007F330C /* NeedleGenerated.swift in Sources */,
+				4B24164C27ECFF2100074B85 /* GameViewBuilder.swift in Sources */,
+				4B24164627EBAC7E00074B85 /* Extension.swift in Sources */,
+				4B9F8EC125F94E0D007F330C /* GameView.swift in Sources */,
+				4B24164A27ECF16000074B85 /* GameRouter.swift in Sources */,
+				4B3BF5E227E905AF0010251F /* HomeRouter.swift in Sources */,
+				4B78BFCE25FC51620015BFD7 /* MoveComponent.swift in Sources */,
+				4BE8A24C2638BE6F00FA5BD7 /* HomeViewItemGridCell.swift in Sources */,
+				4B9F8EC325F94F14007F330C /* GameComponent.swift in Sources */,
+				4B9F8E8A25F320AF007F330C /* SceneDelegate.swift in Sources */,
+				4B78BFD025FC57FA0015BFD7 /* MoveView.swift in Sources */,
+				4B9F8ED125FA9382007F330C /* CharacterComponent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B9F8E9625F320B0007F330C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B9F8E9725F320B0007F330C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B9F8E9925F320B0007F330C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A56B3AF84475A454F4738CD /* Pods-debug.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GDW646NZ5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "kofero-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"NeedleFoundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ro.kofe.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B9F8E9A25F320B0007F330C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F99065036717D68CDB7398D /* Pods-debug.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GDW646NZ5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "kofero-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"NeedleFoundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ro.kofe.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B9F8E7F25F320AF007F330C /* Build configuration list for PBXProject "kofero-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9F8E9625F320B0007F330C /* Debug */,
+				4B9F8E9725F320B0007F330C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B9F8E9825F320B0007F330C /* Build configuration list for PBXNativeTarget "debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9F8E9925F320B0007F330C /* Debug */,
+				4B9F8E9A25F320B0007F330C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B9F8E7C25F320AF007F330C /* Project object */;
+}

@@ -1,0 +1,10 @@
+TODO
+
+- image provision doesnt work on simulator
+
+- images are served incorrectly the first time they load from REST, load correctly when served from disk. almost certainly a view problem, likely being served to the first available grid cell in the uicollectionview, happens in ALL ios views
+
+-write way to display items without having an image on disk, and when that image becomes available on disk then invalidate the grid item and repopulate with new image
+	= CREATE CGImage from the item name and pass it into the UIImage?
+
+-write UI to be dark mode friendly
