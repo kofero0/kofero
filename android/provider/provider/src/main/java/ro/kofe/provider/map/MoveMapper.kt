@@ -6,14 +6,14 @@ import ro.kofe.model.Move
 import java.nio.charset.Charset
 
 
-class MoveMapper(private val gson: Gson): IMapper<List<Move>, ByteArray> {
+class MoveMapper(private val gson: Gson): Mapper<List<Move>, ByteArray> {
     private val typeToken = object : TypeToken<ArrayList<Move>>() {}.type
 
-    override fun mapIO(data: List<Move>): ByteArray {
+    override fun mapRight(data: List<Move>): ByteArray {
         return gson.toJson(data).toByteArray(Charset.defaultCharset())
     }
 
-    override fun mapOI(data: ByteArray): List<Move> {
+    override fun mapLeft(data: ByteArray): List<Move> {
         return gson.fromJson<ArrayList<Move>>(String(data, Charset.defaultCharset()),typeToken)
     }
 }

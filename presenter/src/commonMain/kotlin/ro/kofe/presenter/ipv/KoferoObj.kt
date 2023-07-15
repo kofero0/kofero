@@ -1,10 +1,10 @@
 package ro.kofe.presenter.ipv
 
 import ro.kofe.model.logging.Level
-import ro.kofe.presenter.provider.ILoggingProvider
+import ro.kofe.presenter.provider.LoggingProvider
 
 abstract class KoferoObj(
-    private var loggingProvider: ILoggingProvider?,
+    private var loggingProvider: LoggingProvider?,
     private val logTag: String
 ) {
 
