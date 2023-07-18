@@ -7,7 +7,7 @@ import ro.kofe.model.Event.ViewTag.HOME_VIEW
 import ro.kofe.model.Game
 import ro.kofe.model.Obj
 import ro.kofe.model.logging.LogTag.HOME_INTERACTOR
-import ro.kofe.presenter.IRouter
+import ro.kofe.presenter.Router
 import ro.kofe.presenter.ipv.InteractorImpl
 import ro.kofe.presenter.millisNow
 import ro.kofe.presenter.provider.LoggingProvider
@@ -19,7 +19,7 @@ class HomeInteractorImpl(
     stateLogger: StateLogger,
     stateReducer: StateReducer,
     loggingProvider: LoggingProvider,
-    router: IRouter
+    router: Router
 ) : HomeInteractor, InteractorImpl<HomeView, HomePresenter>(
     presenter,
     stateLogger,

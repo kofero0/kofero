@@ -4,12 +4,12 @@ import ro.kofe.model.Character
 import ro.kofe.model.Game
 import ro.kofe.model.Move
 import ro.kofe.presenter.provider.ImageProvider
-import ro.kofe.presenter.provider.IProvider
+import ro.kofe.presenter.provider.Provider
 
 class MovePresenterImpl(
-    private val moveProvider: IProvider<Move>,
-    private val charProvider: IProvider<Character>,
-    private val gameProvider: IProvider<Game>,
+    private val moveProvider: Provider<Move>,
+    private val charProvider: Provider<Character>,
+    private val gameProvider: Provider<Game>,
     private val imageProvider: ImageProvider
 ) : MovePresenter {
 
