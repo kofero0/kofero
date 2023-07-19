@@ -42,6 +42,8 @@ kotlin {
             dependencies {
                 implementation 'ro.kofe:model:0.0.037'
                 implementation "com.soywiz.korlibs.klock:klock:2.4.13"
+
+                implementation("io.arrow-kt:arrow-core:1.2.0")
             }
         }
         jvmMain {

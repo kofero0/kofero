@@ -1,8 +1,8 @@
 package ro.kofe.presenter.provider
 
+import arrow.core.Either
 import ro.kofe.model.Obj
 
 interface ProviderListener<T : Obj> {
-    fun onReceive(ids: List<Int>, elements: List<T>)
-    fun onError(ids: List<Int>, error: Exception)
+    fun onReturn(ids: List<Int>, elements: )
 }

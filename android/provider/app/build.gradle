@@ -58,4 +58,7 @@ dependencies {
     implementation 'ro.kofe:model:0.0.037'
     implementation 'ro.kofe:kofero-presenter-jvm:0.0.037'
     implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+
+    implementation("io.arrow-kt:arrow-core:1.2.0")
+    implementation("io.arrow-kt:arrow-fx-coroutines:1.2.0")
 }

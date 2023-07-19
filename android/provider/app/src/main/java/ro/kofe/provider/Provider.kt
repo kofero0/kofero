@@ -71,7 +71,11 @@ class Provider<O : Obj>(
 
     private fun saveToDisk() {
         try {
+            val file = File(context.filesDir.absolutePath + "/$jsonFilename")
+            if (!file.exists()){
 
+            }
+            mapper.mapRight(elements).write
         } catch (e: Exception) {
 
         }
